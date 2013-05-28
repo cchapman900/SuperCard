@@ -18,6 +18,7 @@
 		CEED67D51754830F00CE3E2A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEED67D41754830F00CE3E2A /* Default-568h@2x.png */; };
 		CEED67D81754830F00CE3E2A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED67D61754830F00CE3E2A /* MainStoryboard.storyboard */; };
 		CEED67DB1754830F00CE3E2A /* SuperCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED67DA1754830F00CE3E2A /* SuperCardViewController.m */; };
+		CEED67E31754832900CE3E2A /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED67E21754832900CE3E2A /* PlayingCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		CEED67D71754830F00CE3E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CEED67D91754830F00CE3E2A /* SuperCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCardViewController.h; sourceTree = "<group>"; };
 		CEED67DA1754830F00CE3E2A /* SuperCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardViewController.m; sourceTree = "<group>"; };
+		CEED67E11754832900CE3E2A /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardView.h; path = SuperCard/PlayingCardView.h; sourceTree = "<group>"; };
+		CEED67E21754832900CE3E2A /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardView.m; path = SuperCard/PlayingCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		CEED67B21754830F00CE3E2A = {
 			isa = PBXGroup;
 			children = (
+				CEED67E11754832900CE3E2A /* PlayingCardView.h */,
+				CEED67E21754832900CE3E2A /* PlayingCardView.m */,
 				CEED67C41754830F00CE3E2A /* SuperCard */,
 				CEED67BD1754830F00CE3E2A /* Frameworks */,
 				CEED67BC1754830F00CE3E2A /* Products */,
@@ -177,6 +182,7 @@
 				CEED67CB1754830F00CE3E2A /* main.m in Sources */,
 				CEED67CF1754830F00CE3E2A /* SuperCardAppDelegate.m in Sources */,
 				CEED67DB1754830F00CE3E2A /* SuperCardViewController.m in Sources */,
+				CEED67E31754832900CE3E2A /* PlayingCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
