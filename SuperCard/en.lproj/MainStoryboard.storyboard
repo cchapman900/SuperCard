@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Super Card View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="SuperCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LpA-Gf-65q" customClass="PlayingCardView">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jBN-BI-JDi" appends="YES" id="eB4-pz-jag"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59784731660000001" blue="0.044561684460000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LpA-Gf-65q" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" type="default" id="5II-pJ-7NV"/>
+                            <constraint firstAttribute="trailing" secondItem="LpA-Gf-65q" secondAttribute="trailing" constant="264" id="m4o-4F-X1L"/>
+                            <constraint firstItem="LpA-Gf-65q" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="254" id="q1H-JL-xBt"/>
+                            <constraint firstItem="LpA-Gf-65q" firstAttribute="top" secondItem="5" secondAttribute="top" constant="327" id="xoa-lw-poy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="LpA-Gf-65q" id="Mrp-eG-ZqQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jBN-BI-JDi">
+                    <connections>
+                        <action selector="tap:" destination="2" id="A76-rs-Rbu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
